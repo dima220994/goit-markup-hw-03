@@ -6,6 +6,7 @@
     --light-color: #f4f4fd;
     --passive-color: #4d5ae5;
     --active-color: #404bbf;
+    --color-light-blue: #e7e9fc;
     /* text */
     --text-size: 16px;
     --text-spacing: 0.02em;
@@ -18,12 +19,59 @@ body {
     background-color: var(--white-color);
 }
 
+ul {
+    padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .list {
     list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .link {
     text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header .container {
+    display: flex;
 }
 
 .btn {
@@ -41,6 +89,27 @@ body {
     text-transform: uppercase;
 }
 
+.logo-black {
+    color: var(--dark-color);
+}
+
+.logo-white {
+    color: var(--light-color);
+}
+
+.footer-logo {
+    margin-bottom: 18px;
+}
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+}
+
 /* *****************studio******************** */
 /* ----------------- header ----------------- */
 /* logo  */
@@ -55,6 +124,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .nav-list-link:is(:hover, :focus) {
@@ -69,12 +139,45 @@ body {
 .address-link {
     color: var(--text-color);
     font-size: var(--text-size);
+    font-style: normal;
     line-height: var(--typical-lh);
     letter-spacing: var(--text-spacing);
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+}
+
+.address-list {
+    gap: 40px;
 }
 
 .address-link:is(:hover, :focus) {
     color: var(--active-color);
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 76px;
+}
+
+.footer {
+    background-color: #2e2f42;
+    padding: 100px 0;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.footer-info__text {
+    max-width: 264px;
+    color: var(--color-white);
 }
 
 /* ----------------- studio mein ----------------- */
