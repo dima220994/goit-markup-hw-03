@@ -93,7 +93,7 @@ img {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.header-menu {
+.header-menu-list {
     display: flex;
     gap: 40px;
 }
@@ -157,6 +157,8 @@ img {
     max-width: 264px;
     color: var(--color-white);
 }
+
+/* Hero */
 
 .hero {
     background-color: #2e2f42;
